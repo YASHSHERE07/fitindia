@@ -1,0 +1,153 @@
+[
+  {
+    "id": "vegetarian",
+    "title": "DDF Veg Daily Diet Fix Cookbook",
+    "tagline": "Fuel Your Body, One Plant-Powered Meal at a Time.",
+    "image": "/images/veg-flatlay.jpg",
+    "description": "25 easy vegetarian recipes to boost energy, build muscle, and simplify clean eating with Indian flavors.",
+    "sections": [
+      "Salad Bowls",
+      "Curries & Khichdi",
+      "Quick Snacks",
+      "Fusion Dishes"
+    ],
+    "features": [
+      "High-protein vegetarian meals with tofu and paneer",
+      "Balanced macros for smart eating",
+      "Quick 30-min recipes",
+      "Indian + global flavors"
+    ],
+    "why_this_book": [
+      "Vegetarian-friendly fitness without supplements",
+      "Flavorful meals designed to satisfy and nourish",
+      "Ideal for structured meal planning",
+      "Easy to follow even for beginner cooks"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Includes bonus meal planning template!"
+  },
+  {
+    "id": "nonvegetarian",
+    "title": "DDF Non-Veg Daily Diet Fix Cookbook",
+    "tagline": "Protein-Packed Meals to Power Your Performance.",
+    "image": "/images/nonveg-flatlay.jpg",
+    "description": "25 high-protein recipes using chicken, fish, and eggs to build muscle and fuel fat loss — all with Indian spices.",
+    "sections": ["Bowls", "Wraps", "Saucy Chicken", "Soups", "Smoothies"],
+    "features": [
+      "Muscle-building recipes using real food",
+      "Macro-optimized Indian classics",
+      "Post-workout friendly meals",
+      "Quick and accessible for busy lives"
+    ],
+    "why_this_book": [
+      "Tailored for gym-goers needing high-quality animal protein",
+      "Fitness meals with strong Indian flavor profiles",
+      "Includes breakfast to dinner variety",
+      "Macros listed per recipe for serious tracking"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Includes bonus workout guide!"
+  },
+  {
+    "id": "vegan",
+    "title": "DDF Vegan Daily Diet Fix Cookbook",
+    "tagline": "Elevate Your Fitness with 100% Plant Power.",
+    "image": "/images/vegan-flatlay.jpg",
+    "description": "25 vibrant vegan recipes for energy, recovery, and clean eating using lentils, tofu, and whole foods.",
+    "sections": ["Bowls", "Curries", "Snacks", "Pasta", "Smoothies", "Soups"],
+    "features": [
+      "Vegan protein with balanced macros",
+      "Indian + global plant-based meals",
+      "High-fiber, nutrient-dense recipes",
+      "Built for athletic and ethical eaters"
+    ],
+    "why_this_book": [
+      "Helps build muscle without animal products",
+      "Fusion of Indian spices + modern vegan dishes",
+      "Easy swaps for everyday ingredients",
+      "Macros per recipe keep it fitness-friendly"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Includes plant-based protein guide!"
+  },
+  {
+    "id": "vegan-vegetarian",
+    "title": "DDF Combo: Vegan + Vegetarian",
+    "tagline": "Plant-Powered Strength Meets Indian Comfort.",
+    "image": "/images/vegan-veg-combo.jpg",
+    "description": "Get both Vegan and Vegetarian cookbooks — 50 recipes total — for holistic, flexible plant-powered fitness eating.",
+    "includes": ["vegan", "vegetarian"],
+    "features": [
+      "Mix of dairy and dairy-free options",
+      "Double the variety for every mood and goal",
+      "Perfect for families or flexible vegetarians"
+    ],
+    "why_this_book": [
+      "Covers full plant-based spectrum",
+      "Great for transitioning to fully vegan or blending diets",
+      "Save more with the combo than buying individually"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Free bonus: Smoothie prep guide included!"
+  },
+  {
+    "id": "vegan-nonvegetarian",
+    "title": "DDF Combo: Vegan + Non-Vegetarian",
+    "tagline": "Maximize Protein Flexibility with Plant & Animal Sources.",
+    "image": "/images/vegan-nonveg-combo.jpg",
+    "description": "Get 50+ recipes combining the muscle-building power of non-veg with the clean energy of vegan eating.",
+    "includes": ["vegan", "nonvegetarian"],
+    "features": [
+      "Perfect balance for high-performance diets",
+      "Explore ethical eating while still hitting protein targets",
+      "Ideal for flexible eaters or shared households"
+    ],
+    "why_this_book": [
+      "Gain full control over your protein sources",
+      "Great for anyone exploring vegan on training rest days",
+      "Train harder, recover smarter with hybrid options"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Bonus PDF: Weekly macro mix planner!"
+  },
+  {
+    "id": "vegetarian-nonvegetarian",
+    "title": "DDF Combo: Vegetarian + Non-Vegetarian",
+    "tagline": "From Cottage Cheese to Chicken – Build Your Best Meals.",
+    "image": "/images/veg-nonveg-combo.jpg",
+    "description": "Two powerful books combining vegetarian comfort food with non-veg performance meals — 50 recipes to fuel your goals.",
+    "includes": ["vegetarian", "nonvegetarian"],
+    "features": [
+      "Ideal for mixed households and flexible eaters",
+      "Cover traditional Indian cooking needs with a fitness spin",
+      "Smart pairing of flavor + function"
+    ],
+    "why_this_book": [
+      "From light snacks to post-gym meals — it's all here",
+      "Great for managing family diet preferences",
+      "Big savings + full day planning flexibility"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Free bonus: Grocery checklist template!"
+  },
+  {
+    "id": "vegan-vegetarian-nonvegetarian",
+    "title": "DDF Mega Combo: Vegan + Vegetarian + Non-Veg",
+    "tagline": "The Complete Fitness Cookbook Set for Every Lifestyle.",
+    "image": "/images/all-combo.jpg",
+    "description": "Unlock all 3 cookbooks and 75+ recipes that match every mood, goal, and lifestyle — the ultimate recipe arsenal for clean eating.",
+    "includes": ["vegan", "vegetarian", "nonvegetarian"],
+    "features": [
+      "Best value – save big on the full set",
+      "Ideal for nutrition coaches, families, or power couples",
+      "Gives unmatched flexibility for any training phase"
+    ],
+    "why_this_book": [
+      "One purchase = every clean eating option imaginable",
+      "Plan months of meals with zero boredom",
+      "Total protein, variety, flavor, and value in one bundle"
+    ],
+    "cta": "Buy Now",
+    "bonus": "Exclusive bonus: Monthly meal planner + recipe tracker!"
+  }
+]
