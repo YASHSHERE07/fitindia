@@ -9,69 +9,66 @@ import {
   FiArrowUp,
 } from "react-icons/fi";
 
-import vegImage from "../assets/food.webp";
-import nonVegImage from "../assets/food.webp";
-import veganImage from "../assets/food.webp";
-import veganVegImage from "../assets/food.webp";
-import veganNonvegImage from "../assets/food.webp";
-import vegNonvegImage from "../assets/food.webp";
-import allComboImage from "../assets/food.webp";
+import vegImage from "../assets/gallery/1veg.png";
+import nonVegImage from "../assets/gallery/1non.png";
+import veganImage from "../assets/gallery/1vegan.png";
+import veganVegImage from "../assets/gallery/2veg (2).png";
+import vegNonvegImage from "../assets/gallery/1vegnon.png";
+import allComboImage from "../assets/gallery/3all.png";
 
 const staticProducts = [
   {
     id: "vegan",
-    title: "Vegan Diet Book",
+    title: "25 Vegan Recipes : The Vegan Muscle Kitchen",
     tagline: "Plant-powered meals to fuel your fitness.",
     description:
-      "Delicious, nutrient-rich vegan recipes for energy and wellness.",
+      "Unlock the power of plants with 25 high-protein vegan meals designed to fuel fat loss without ever feeling deprived. This isn't another salad book — it`s your go-to guide for nutrient-dense, satisfying, and fitness-focused dishes that support weight loss and keep your energy high.",
     image: veganImage,
   },
   {
     id: "vegetarian",
-    title: "Vegetarian Diet Book",
-    tagline: "Pure vegetarian meals made easy.",
+    title: "25 Vegetarian Recipes : The High-Protein Indian Veg Cookbook",
+    tagline: "Shred smart with satisfying vegetarian recipes.",
     description:
-      "Balanced, high-protein vegetarian dishes with global and Indian flavors.",
+      "Ready to lose weight without giving up your love for wholesome Indian meals? This book brings you 25 carefully crafted vegetarian recipes packed with protein, fiber, and clean carbs — perfect for cutting fat while staying energized and satisfied.",
     image: vegImage,
   },
   {
     id: "nonvegetarian",
-    title: "Non-Vegetarian Diet Book",
-    tagline: "Power-packed meals with chicken, fish & eggs.",
+    title: "25 Non-Vegetarian Recipes : Protein First Fit Life",
+    tagline: "Build lean muscle and burn fat — one delicious meal at a time.",
     description:
-      "Lean protein-rich recipes for muscle gain, fat loss, and energy.",
+      "Fuel your fat-loss journey with clean, protein-packed meals made for results — not excuses. This cookbook delivers 25 expertly crafted non-vegetarian recipes using chicken, fish, and eggs to help you cut weight, preserve muscle, and stay satisfied.",
     image: nonVegImage,
   },
   {
     id: "vegan-vegetarian",
-    title: "Vegan + Vegetarian Combo",
-    tagline: "Best of both worlds: 100% plant-based and dairy meals.",
+    title:
+      "25 Vegan Recipes + 25 Vegetarian Recipes Combo :The Lean Plant Kitchen",
+    tagline: "Vegan + vegetarian meals for fat loss and fullness.",
     description:
-      "A dual guide for flexible plant-based living — energize with both vegan and vegetarian recipes.",
+      "Discover the power of plant-based eating — optimized for fat loss. The Lean Plant Kitchen brings you 50 clean, protein-rich meals split evenly between vegan and vegetarian options. Whether you’re going fully plant-based or adding variety to your cut, this book delivers the flavor, macros, and satisfaction you need.",
     image: veganVegImage,
   },
-  {
-    id: "vegan-nonvegetarian",
-    title: "Vegan + Non-Vegetarian Combo",
-    tagline: "Smart variety: go meatless or meaty depending on your day.",
-    description:
-      "Flex between plant-powered and protein-heavy meals without compromise.",
-    image: veganNonvegImage,
-  },
+
   {
     id: "vegetarian-nonvegetarian",
-    title: "Vegetarian + Non-Vegetarian Combo",
-    tagline: "From lentils to lean meats — curated for results.",
+    title:
+      "25 Vegetarian Recipes + 25 Non-Vegetarian Recipes Combo :The Dual Fuel Kitchen",
+    tagline:
+      "High-protein vegetarian + non-veg meals to shred fat and stay full.",
     description:
-      "Support all your fitness goals with the perfect vegetarian + non-veg pairing.",
+      "Cut fat your way — with or without meat. The Dual Fuel Kitchen is the ultimate fat-loss cookbook combining 25 vegetarian and 25 non-vegetarian recipes, all built around high protein, clean ingredients, and real results. Whether you’re a meat-eater, a paneer-lover, or somewhere in between — this book fuels your cut without compromise.",
     image: vegNonvegImage,
   },
   {
     id: "vegan-vegetarian-nonvegetarian",
-    title: "Complete Diet Book (All Types)",
-    tagline: "Vegan. Vegetarian. Non-Veg. All in one cookbook.",
+    title:
+      "25 Vegan + 25 Vegetarian Recipes + 25 Non-Vegetarian The Triple Burn Kitchen",
+    tagline:
+      "High-protein vegan, vegetarian, and non-veg meals to fuel fat loss..",
     description:
-      "Enjoy complete flexibility with 3-in-1 recipe options tailored to every need and lifestyle.",
+      "One goal, three ways to get there — fat loss through clean, powerful meals. The Triple Burn Kitchen gives you 75 macro-optimized recipes across vegan, vegetarian, and non-vegetarian diets. Whether you're meat-free, plant-curious, or protein-focused, this is your ultimate guide to shredding fat without sacrificing satisfaction.",
     image: allComboImage,
   },
 ];
@@ -85,13 +82,13 @@ const ProductPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-950 to-rose-950 py-16 relative overflow-hidden">
+    <div className="min-h-screen  bg-gradient-to-br from-zinc-950 to-rose-950 py-16 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-5 bg-[url('https://img.freepik.com/free-photo/black-concrete-wall_53876-92803.jpg')]" />
       <div className="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-r from-rose-600/20 to-purple-600/20 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <h1 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent md:text-5xl">
+      <div className="container max-w-7xl mx-auto px-4 relative z-10">
+        <h1 className="text-4xl uppercase font-bold text-center mb-16 bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent md:text-5xl">
           Culinary Masterpiece Collections
         </h1>
 
@@ -106,9 +103,9 @@ const ProductPage = () => {
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-fil transform group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/20 " />
 
                 <div className="absolute top-4 left-4 bg-gradient-to-r from-rose-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-bold backdrop-blur-sm">
                   {product.id.toUpperCase()}
@@ -116,7 +113,10 @@ const ProductPage = () => {
               </div>
 
               <div className="p-6">
-                <h2 className="text-xl font-semibold mb-3 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">
+                <h2 className="text-2xl font-semibold mb-3 bg-gradient-to-r from-rose-300 to-purple-300 bg-clip-text text-transparent">
+                  {product.title}
+                </h2>
+                <h2 className="text-xl font-semibold  bg-rose-500  bg-clip-text text-transparent">
                   {product.tagline}
                 </h2>
                 <p className="text-gray-400 text-sm line-clamp-2 leading-relaxed">
@@ -139,7 +139,7 @@ const ProductPage = () => {
 
         <div className="mt-16 text-center">
           <p className="text-gray-400 text-sm italic">
-            Trusted by 50,000+ culinary enthusiasts worldwide
+            Trusted by many worldwide
           </p>
           <div className="flex justify-center gap-6 mt-4">
             <div className="w-8 h-8 bg-rose-600/20 rounded-full flex items-center justify-center">

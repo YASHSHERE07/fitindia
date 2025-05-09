@@ -2,97 +2,133 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import diets from "../assets/diets.json";
 import {
-  FiHeart,
   FiShoppingCart,
-  FiDownload,
   FiChevronLeft,
   FiChevronRight,
-  FiCheck,
+  FiGift,
   FiStar,
   FiClock,
   FiLock,
   FiBookOpen,
-  FiGift,
+  FiCheck,
   FiArrowRight,
-  FiArrowLeft,
 } from "react-icons/fi";
 
-// Vegetarian Images
-import veg1 from "../assets/gallery/food.webp";
-import veg2 from "../assets/gallery/food.webp";
-import veg3 from "../assets/gallery/food.webp";
-import veg4 from "../assets/gallery/food.webp";
-import veg5 from "../assets/gallery/food.webp";
-import veg6 from "../assets/gallery/food.webp";
-import veg7 from "../assets/gallery/food.webp";
+// VEGAN
+import vegan1 from "../assets/gallery/vegan1.png";
+import vegan2 from "../assets/gallery/veg2.png";
+import vegan3 from "../assets/gallery/vegan2.png";
+import vegan4 from "../assets/gallery/vegan3.png";
 
-// Non-Vegetarian Images
-import nonveg1 from "../assets/gallery/food.webp";
-import nonveg2 from "../assets/gallery/food.webp";
-import nonveg3 from "../assets/gallery/food.webp";
-import nonveg4 from "../assets/gallery/food.webp";
-import nonveg5 from "../assets/gallery/food.webp";
-import nonveg6 from "../assets/gallery/food.webp";
-import nonveg7 from "../assets/gallery/food.webp";
+// VEGETARIAN
+import veg1 from "../assets/gallery/veg1.png";
+import veg2 from "../assets/gallery/veg2.png";
+import veg3 from "../assets/gallery/veg11.png";
+import veg4 from "../assets/gallery/veg12.png";
+import veg5 from "../assets/gallery/veg3.png";
 
-// Combined Images
-import combo1 from "../assets/gallery/food.webp";
-import combo2 from "../assets/gallery/food.webp";
-import combo3 from "../assets/gallery/food.webp";
-import combo4 from "../assets/gallery/food.webp";
-import combo5 from "../assets/gallery/food.webp";
-import combo6 from "../assets/gallery/food.webp";
-import combo7 from "../assets/gallery/food.webp";
+// NON-VEGETARIAN
+import nonveg1 from "../assets/gallery/non1.png";
+import nonveg2 from "../assets/gallery/non2.png";
+import nonveg3 from "../assets/gallery/non3.png";
+
+// MIXED COMBOS (reusing images for now)
+import vegan_veg from "../assets/gallery/vegan+veg.png";
+import _vegan_veg from "../assets/gallery/2veg.png";
+
+import vegan_non from "../assets/gallery/vegno.png";
+import _vegan_non from "../assets/gallery/2vegno.png";
+
+import combo1 from "../assets/gallery/allcombo.png";
+import combo2 from "../assets/gallery/combo.png";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [galleryImages, setGalleryImages] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [currentImage, setCurrentImage] = useState(0);
-
+  const [loading, setLoading] = useState(true);
+  const [section1, setSection1] = useState([]);
+  const [section2, setSection2] = useState([]);
+  const [section3, setSection3] = useState([]);
   useEffect(() => {
     const match = diets.find((item) => item.id === id);
     setProduct(match || null);
 
-    if (id === "vegetarian") {
-      setGalleryImages([veg1, veg2, veg3, veg4, veg5, veg6, veg7]);
-    } else if (id === "non-vegetarian") {
-      setGalleryImages([
-        nonveg1,
-        nonveg2,
-        nonveg3,
-        nonveg4,
-        nonveg5,
-        nonveg6,
-        nonveg7,
-      ]);
-    } else if (id === "combined") {
-      setGalleryImages([
-        combo1,
-        combo2,
-        combo3,
-        combo4,
-        combo5,
-        combo6,
-        combo7,
-      ]);
+    // Fetch sections separately
+    if (match) {
+      setSection1(match.section_1 || []); // Fetch section_1
+      setSection2(match.section_2 || []); // Fetch section_2
+      setSection3(match.section_3 || []); // Fetch section_3
     }
 
     setLoading(false);
   }, [id]);
 
-  const nextImage = () => {
-    setCurrentImage((prev) =>
-      prev === galleryImages.length - 1 ? 0 : prev + 1
-    );
-  };
+  useEffect(() => {
+    const match = diets.find((item) => item.id === id);
+    setProduct(match || null);
 
-  const prevImage = () => {
+    switch (id) {
+      case "vegan":
+        setGalleryImages([vegan1, vegan2, vegan3, vegan4, veg5]);
+        break;
+      case "vegetarian":
+        setGalleryImages([veg1, veg2, veg3, veg4, veg5]);
+        break;
+      case "nonvegetarian":
+        setGalleryImages([nonveg1, nonveg2, nonveg3, veg5]);
+        break;
+      case "vegan-vegetarian":
+        setGalleryImages([
+          vegan_veg,
+          _vegan_veg,
+          vegan3,
+          vegan4,
+          veg3,
+          veg4,
+          veg5,
+        ]);
+        break;
+
+      case "vegetarian-nonvegetarian":
+        setGalleryImages([
+          vegan_non,
+          _vegan_non,
+          veg3,
+          veg4,
+          nonveg2,
+          nonveg3,
+          veg5,
+        ]);
+        break;
+      case "vegan-vegetarian-nonvegetarian":
+        setGalleryImages([
+          combo2,
+          combo1,
+          vegan3,
+          vegan4,
+          veg3,
+          veg4,
+          nonveg2,
+          nonveg3,
+          veg5,
+        ]);
+        break;
+      default:
+        setGalleryImages([combo1]);
+    }
+
+    setLoading(false);
+  }, [id]);
+
+  const nextImage = () =>
+    setCurrentImage((prev) => (prev + 1) % galleryImages.length);
+
+  const prevImage = () =>
     setCurrentImage((prev) =>
       prev === 0 ? galleryImages.length - 1 : prev - 1
     );
-  };
 
   if (loading) return <p className="text-center py-10">Loading product...</p>;
   if (!product)
@@ -113,14 +149,10 @@ const ProductDetailPage = () => {
             <img
               src={galleryImages[currentImage]}
               alt={`Preview ${currentImage + 1}`}
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-fill transform group-hover:scale-105 transition-transform duration-500"
             />
 
             {/* Floating Metadata */}
-            <div className="absolute top-6 left-6 bg-black/40 backdrop-blur-sm p-4 rounded-2xl">
-              <h2 className="text-2xl font-bold text-white">{product.title}</h2>
-              <p className="text-rose-200">{product.tagline}</p>
-            </div>
 
             {/* Dynamic Progress Dots */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
@@ -209,81 +241,181 @@ const ProductDetailPage = () => {
         </div>
 
         {/* Parallax Content Sections */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Interactive Feature Grid */}
-          <div className="space-y-12">
-            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-[48px] p-10 border-2 border-white/5">
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-8">
-                Inside the Book
-              </h2>
-              <div className="grid gap-6">
-                {(product.features || []).map((feature, i) => (
+        <div className="flex flex-col gap-16">
+          {/* Main Content Grid */}
+          <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8">
+            {/* Features Card - Glass Morphism */}
+            <div className="bg-glass bg-white/5 rounded-3xl p-8 backdrop-blur-xl border border-white/10 shadow-2xl shadow-rose-900/30">
+              <div className="mb-10">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                  Inside the Book
+                </h2>
+                <p className="text-lg text-zinc-300 leading-relaxed">
+                  {product.features_desc}
+                </p>
+              </div>
+
+              <div className="grid gap-4">
+                {product.features?.map((feature, i) => (
                   <div
                     key={i}
-                    className="p-6 bg-zinc-800/50 hover:bg-zinc-800 rounded-xl border-2 border-zinc-700/50 hover:border-rose-500/30 transition-colors cursor-pointer"
+                    className="group p-6 bg-white/5 rounded-xl border border-white/10 hover:border-rose-400/30 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
                   >
-                    <div className="flex items-center gap-4">
-                      <div className="bg-gradient-to-r from-rose-600 to-purple-600 p-2 rounded-lg">
-                        <FiCheck className="w-6 h-6 text-white" />
+                    <div className="flex items-start gap-5">
+                      <div className="shrink-0 w-10 h-10 bg-gradient-to-br from-rose-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <FiCheck className="w-5 h-5 text-white" />
                       </div>
-                      <span className="text-zinc-300 text-lg">{feature}</span>
+                      <p className="text-zinc-200 text-lg leading-snug">
+                        {feature}
+                      </p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Chapter Explorer */}
-            {product.sections?.length > 0 && (
-              <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-[48px] p-10 border-2 border-white/5">
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-rose-400 bg-clip-text text-transparent mb-8">
-                  Chapter Breakdown
+            {/* Value Proposition Card - Floating Effect */}
+            <div className="bg-glass bg-rose-900/20 rounded-3xl p-8 backdrop-blur-xl border border-rose-400/20 shadow-2xl shadow-rose-900/30">
+              <div className="mb-10">
+                <h2 className="text-2xl font-bold text-rose-300/90 mb-6">
+                  Why This Edition?
                 </h2>
-                <div className="grid gap-4">
-                  {product.sections.map((section, i) => (
-                    <div
-                      key={i}
-                      className="p-6 bg-zinc-800/50 hover:bg-zinc-800 rounded-xl border-2 border-zinc-700/50 hover:border-purple-500/30 transition-colors"
-                    >
-                      <div className="flex items-center gap-4">
-                        <span className="w-12 h-12 bg-gradient-to-r from-purple-600 to-rose-600 text-white rounded-xl flex items-center justify-center text-xl font-bold">
-                          {i + 1}
-                        </span>
-                        <span className="text-zinc-300 text-lg">{section}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-lg text-rose-100/80 leading-relaxed">
+                  {product.why_this_book_desc}
+                </p>
               </div>
-            )}
-          </div>
 
-          {/* Value Proposition Showcase */}
-          <div className="bg-gradient-to-br from-zinc-900 to-rose-900/20 rounded-[48px] p-10 border-2 border-rose-500/20 backdrop-blur-lg">
-            <h2 className="text-3xl font-bold text-rose-300 mb-10">
-              Why This Edition?
-            </h2>
-            <div className="space-y-8">
-              {(product.why_this_book || []).map((point, i) => (
-                <div
-                  key={i}
-                  className="group relative overflow-hidden rounded-2xl bg-zinc-800/50 hover:bg-zinc-800 transition-colors"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-rose-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative p-6 flex items-start gap-6">
-                    <div className="bg-gradient-to-r from-rose-600 to-purple-600 p-3 rounded-xl">
-                      <FiStar className="w-8 h-8 text-white" />
+              <div className="space-y-5">
+                {product.why_this_book?.map((point, i) => (
+                  <div
+                    key={i}
+                    className="p-5 bg-rose-900/30 rounded-xl border border-rose-400/20 hover:border-rose-400/40 transition-all group"
+                  >
+                    <div className="flex items-center gap-5">
+                      <div className="shrink-0 w-12 h-12 bg-gradient-to-br from-rose-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <FiStar className="w-6 h-6 text-white" />
+                      </div>
+                      <p className="text-rose-100/90 text-lg leading-snug">
+                        {point}
+                      </p>
                     </div>
-                    <p className="text-zinc-300 text-lg leading-relaxed">
-                      {point}
-                    </p>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
 
+          {/* Chapter Grid - Modern Masonry Layout */}
+          {/* Section 1 */}
+          {section1.length > 0 && (
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                Section 1
+              </h3>
+              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {section1.map((item, i) => (
+                  <div
+                    key={i}
+                    className="group relative h-full p-6 bg-zinc-800/30 rounded-xl border border-white/10 hover:border-purple-400/30 transition-all duration-300 hover:-translate-y-1.5"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-rose-900/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
+                    <div className="relative flex flex-col h-full">
+                      <div className="flex items-start gap-4 mb-3">
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-rose-600 text-white rounded-lg flex items-center justify-center text-lg font-bold shrink-0">
+                          {item.chapterNum}
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-zinc-200">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm text-purple-400/90 mt-1">
+                            {item.recipeCount}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-zinc-400 mb-2">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Section 2 */}
+          {section2.length > 0 && (
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                Section 2
+              </h3>
+              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {section2.map((item, i) => (
+                  <div
+                    key={i}
+                    className="group relative h-full p-6 bg-zinc-800/30 rounded-xl border border-white/10 hover:border-purple-400/30 transition-all duration-300 hover:-translate-y-1.5"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-rose-900/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
+                    <div className="relative flex flex-col h-full">
+                      <div className="flex items-start gap-4 mb-3">
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-rose-600 text-white rounded-lg flex items-center justify-center text-lg font-bold shrink-0">
+                          {item.chapterNum}
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-zinc-200">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm text-purple-400/90 mt-1">
+                            {item.recipeCount}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-zinc-400 mb-2">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {section3.length > 0 && (
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
+                Section 3
+              </h3>
+              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {section3.map((item, i) => (
+                  <div
+                    key={i}
+                    className="group relative h-full p-6 bg-zinc-800/30 rounded-xl border border-white/10 hover:border-purple-400/30 transition-all duration-300 hover:-translate-y-1.5"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-rose-900/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />
+                    <div className="relative flex flex-col h-full">
+                      <div className="flex items-start gap-4 mb-3">
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-rose-600 text-white rounded-lg flex items-center justify-center text-lg font-bold shrink-0">
+                          {item.chapterNum}
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-zinc-200">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm text-purple-400/90 mt-1">
+                            {item.recipeCount}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-zinc-400 mb-2">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
         {/* Floating Metadata Footer */}
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900/80 backdrop-blur-xl px-8 py-4 rounded-full border-2 border-white/5 shadow-2xl flex gap-8 items-center">
           <div className="flex items-center gap-4">

@@ -1,153 +1,546 @@
 [
   {
     "id": "vegetarian",
-    "title": "DDF Veg Daily Diet Fix Cookbook",
-    "tagline": "Fuel Your Body, One Plant-Powered Meal at a Time.",
-    "image": "/images/veg-flatlay.jpg",
-    "description": "25 easy vegetarian recipes to boost energy, build muscle, and simplify clean eating with Indian flavors.",
-    "sections": [
-      "Salad Bowls",
-      "Curries & Khichdi",
-      "Quick Snacks",
-      "Fusion Dishes"
+    "title": "25 Vegetarian Recipes : The Lean Veg Kitchen",
+    "tagline": "Clean vegetarian meals designed for fat loss.",
+    "image": "/images/vegetarian-flatlay.jpg",
+    "description": "25 macro-balanced vegetarian recipes using paneer, dals, and whole grains — crafted for clean eating, satiety, and weight loss.",
+    "section_1": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Healthy Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fresh, filling bowls with high-protein ingredients like rajma, tofu, quinoa, and soya chunks — ideal for lunch or light dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Curries & Khichdi",
+        "recipeCount": "3 Recipes",
+        "description": "Balanced Indian-style vegetarian mains made with clean ingredients like tofu, spinach, and quinoa for comfort and nutrition."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Quick Snacks & Light Meals",
+        "recipeCount": "10 Recipes",
+        "description": "Sandwiches, wraps, rolls, and stir-fries crafted for taste and macros — perfect for small meals, post-workout bites, or mid-day fuel."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Pasta & Fusion Dishes",
+        "recipeCount": "2 Recipes",
+        "description": "Continental-style meals using paneer and veggies, with an Indian twist — designed for variety and clean indulgence."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies & Drinks",
+        "recipeCount": "3 Recipes",
+        "description": "Macro-friendly smoothies for breakfast or post-training recovery, loaded with protein, healthy fats, and clean carbs."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Soups",
+        "recipeCount": "2 Recipes",
+        "description": "Low-calorie, digestion-friendly soups rich in protein and fiber — great for light dinners or reset days."
+      }
     ],
+    "features_desc": "Welcome to The Lean Veg Kitchen — a high-protein, fat-loss-focused cookbook for those who want real results without giving up their love for vegetarian food. Inside, you’ll find 25 macro-balanced vegetarian recipes, designed to keep you full, fuel fat loss, and deliver clean energy.",
     "features": [
-      "High-protein vegetarian meals with tofu and paneer",
-      "Balanced macros for smart eating",
-      "Quick 30-min recipes",
-      "Indian + global flavors"
+      "Vegetarian protein sources like paneer, legumes, and grains",
+      "Indian + global recipes with macro-friendly design",
+      "Easy-to-cook meals with local ingredients",
+      "Crafted for lean muscle, satiety, and flavor"
     ],
+    "why_this_book_desc": "Most vegetarian diets are carb-heavy and protein-light — not ideal for cutting fat. The Lean Veg Kitchen fixes that with carefully structured meals built around fat loss and flavor. No boring salads. No dry meals. Just real food for real progress.",
     "why_this_book": [
-      "Vegetarian-friendly fitness without supplements",
-      "Flavorful meals designed to satisfy and nourish",
-      "Ideal for structured meal planning",
-      "Easy to follow even for beginner cooks"
+      "Designed for vegetarians serious about fat loss",
+      "Paneer and dals used with portion control and balance",
+      "Desi flavors with global variety",
+      "Clear macro goals to support your cut",
+      "Works for busy schedules and active lifestyles"
     ],
     "cta": "Buy Now",
-    "bonus": "Includes bonus meal planning template!"
+    "bonus": "Includes vegetarian protein swaps and macro chart!"
   },
+
   {
     "id": "nonvegetarian",
-    "title": "DDF Non-Veg Daily Diet Fix Cookbook",
-    "tagline": "Protein-Packed Meals to Power Your Performance.",
+    "title": "25 Non-Vegetarian Recipes : The Shred Kitchen",
+    "tagline": "High-protein chicken, fish, and egg meals to burn fat and stay full.",
     "image": "/images/nonveg-flatlay.jpg",
-    "description": "25 high-protein recipes using chicken, fish, and eggs to build muscle and fuel fat loss — all with Indian spices.",
-    "sections": ["Bowls", "Wraps", "Saucy Chicken", "Soups", "Smoothies"],
-    "features": [
-      "Muscle-building recipes using real food",
-      "Macro-optimized Indian classics",
-      "Post-workout friendly meals",
-      "Quick and accessible for busy lives"
+    "description": "25 lean and flavorful non-veg recipes using chicken, fish, and eggs — designed for fat loss, muscle retention, and clean eating.",
+    "section_1": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Power Bowls",
+        "recipeCount": "8 Recipes",
+        "description": "Protein-packed meals served in a bowl with greens, grains, or legumes — perfect for lunch or dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Sandwiches & Rolls",
+        "recipeCount": "8 Recipes",
+        "description": "High-protein non-veg sandwiches and wraps ideal for clean eating on the go or meal prep."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Sauce-Based Chicken Dishes",
+        "recipeCount": "6 Recipes",
+        "description": "Flavorful, fat-loss-friendly chicken recipes paired with yogurt, herbs, or clean sauces."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Soups",
+        "recipeCount": "3 Recipes",
+        "description": "Light, healing, and protein-rich soups — perfect for digestion, reset days, or low-cal dinners."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies",
+        "recipeCount": "1 Recipe",
+        "description": "A refreshing, protein-supported green smoothie for clean energy and hydration."
+      }
     ],
+    "features_desc": "Welcome to The Shred Kitchen — your go-to cookbook for non-vegetarian fat loss meals. Inside, you’ll find 25 macro-focused recipes using chicken, fish, and eggs to help you build lean muscle, shred fat, and stay energized. These aren’t boring boiled meals — they’re flavor-packed, fitness-first plates.",
+    "features": [
+      "High-protein meals using lean chicken, fish, and eggs",
+      "Balanced macros for sustainable fat loss",
+      "Indian + global recipe styles with bold flavors",
+      "Quick to cook and gym-goal approved"
+    ],
+    "why_this_book_desc": "Most non-veg plans focus on bulk or indulgence — not smart fat loss. The Shred Kitchen changes that by offering clean, satisfying, and macro-calibrated meals that are easy to prepare, delicious to eat, and effective for cutting fat while preserving muscle.",
     "why_this_book": [
-      "Tailored for gym-goers needing high-quality animal protein",
-      "Fitness meals with strong Indian flavor profiles",
-      "Includes breakfast to dinner variety",
-      "Macros listed per recipe for serious tracking"
+      "Fat-loss focused, not just high-protein",
+      "Zero-oil cooking options without losing flavor",
+      "Mix of Indian spices and global seasoning",
+      "Macros designed for lean transformation",
+      "Perfect for gym-goers, athletes, and busy professionals"
     ],
     "cta": "Buy Now",
-    "bonus": "Includes bonus workout guide!"
+    "bonus": "Includes non-veg macro tracker and protein portion cheat sheet!"
   },
+
   {
     "id": "vegan",
-    "title": "DDF Vegan Daily Diet Fix Cookbook",
-    "tagline": "Elevate Your Fitness with 100% Plant Power.",
+    "title": "25 Vegan Recipes : The Vegan Muscle Kitchen",
+    "tagline": "Plant-powered meals to fuel your fitness.",
     "image": "/images/vegan-flatlay.jpg",
     "description": "25 vibrant vegan recipes for energy, recovery, and clean eating using lentils, tofu, and whole foods.",
-    "sections": ["Bowls", "Curries", "Snacks", "Pasta", "Smoothies", "Soups"],
-    "features": [
-      "Vegan protein with balanced macros",
-      "Indian + global plant-based meals",
-      "High-fiber, nutrient-dense recipes",
-      "Built for athletic and ethical eaters"
+    "section_1": [
+      {
+        "chapterNum": "1",
+        "title": "Soups",
+        "recipeCount": "3 Recipes",
+        "description": "Warm, protein-rich broths and soups ideal for dinner or recovery meals."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Salad Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fiber-filled, crunchy bowls with lentils, beans, quinoa, seeds, and greens."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Wraps & Rolls",
+        "recipeCount": "3 Recipes",
+        "description": "Tempeh, tofu, and jackfruit wraps made for flavor and post-workout balance."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Healthy Bowls",
+        "recipeCount": "5 Recipes",
+        "description": "Complete one-bowl meals for satiety, strength, and fat-burning fuel."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Toasts, Sandwiches & Muffins",
+        "recipeCount": "3 Recipes",
+        "description": "Savory morning meals and grab-and-go sandwiches made clean."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Pasta",
+        "recipeCount": "2 Recipes",
+        "description": "Dairy-free, protein-enhanced pasta dishes using lentils, tofu, and veggies."
+      },
+      {
+        "chapterNum": "7",
+        "title": "Patties & Parathas",
+        "recipeCount": "3 Recipes",
+        "description": "High-protein Indian-inspired mains with flaxseeds, tofu, millet, and more."
+      },
+      {
+        "chapterNum": "8",
+        "title": "Snacks & Smoothies",
+        "recipeCount": "2 Recipes",
+        "description": "Muscle-repairing bites and post-workout smoothies to power recovery."
+      }
     ],
+    "features_desc": "Welcome to The Vegan Muscle Kitchen — your clean eating blueprint for fat loss, strength, and energy through plants. Inside, you’ll find 25 macro-calibrated vegan recipes built for real fitness goals — not fads.",
+    "features": [
+      "Complete or complementary plant protein sources",
+      "High-fiber meals for digestion and satiety",
+      "Indian + global flavor combinations",
+      "No soy overload, no gimmicks — just real results"
+    ],
+    "why_this_book_desc": "Most vegan cookbooks focus on general wellness or weight maintenance — not fat loss and muscle support. This edition changes that with real structure, science-backed combinations, and macros that matter.",
     "why_this_book": [
-      "Helps build muscle without animal products",
-      "Fusion of Indian spices + modern vegan dishes",
-      "Easy swaps for everyday ingredients",
-      "Macros per recipe keep it fitness-friendly"
+      "Each meal delivers 15–25g protein from whole foods",
+      "Designed for fat loss, muscle recovery, and energy",
+      "Includes full-day variety: bowls, soups, smoothies & more",
+      "Perfect for clean-eating vegans serious about results",
+      "Balanced macros, easy ingredients, and bold flavors"
     ],
     "cta": "Buy Now",
     "bonus": "Includes plant-based protein guide!"
   },
   {
     "id": "vegan-vegetarian",
-    "title": "DDF Combo: Vegan + Vegetarian",
-    "tagline": "Plant-Powered Strength Meets Indian Comfort.",
-    "image": "/images/vegan-veg-combo.jpg",
-    "description": "Get both Vegan and Vegetarian cookbooks — 50 recipes total — for holistic, flexible plant-powered fitness eating.",
-    "includes": ["vegan", "vegetarian"],
-    "features": [
-      "Mix of dairy and dairy-free options",
-      "Double the variety for every mood and goal",
-      "Perfect for families or flexible vegetarians"
+    "title": "50 Vegan + Vegetarian Recipes : The Lean Plant Kitchen",
+    "tagline": "High-protein meat-free meals for fat loss and clean fuel.",
+    "image": "/images/vegan-vegetarian-combo.jpg",
+    "description": "A powerful collection of 50 macro-balanced recipes — 25 vegan and 25 vegetarian — crafted to help you lose fat, stay full, and eat clean with plants, paneer, legumes, and grains.",
+    "section_1": [
+      {
+        "chapterNum": "1",
+        "title": "Soups",
+        "recipeCount": "3 Recipes",
+        "description": "Warm, protein-rich broths and soups ideal for dinner or recovery meals."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Salad Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fiber-filled, crunchy bowls with lentils, beans, quinoa, seeds, and greens."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Wraps & Rolls",
+        "recipeCount": "3 Recipes",
+        "description": "Tempeh, tofu, and jackfruit wraps made for flavor and post-workout balance."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Healthy Bowls",
+        "recipeCount": "5 Recipes",
+        "description": "Complete one-bowl meals for satiety, strength, and fat-burning fuel."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Toasts, Sandwiches & Muffins",
+        "recipeCount": "3 Recipes",
+        "description": "Savory morning meals and grab-and-go sandwiches made clean."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Pasta",
+        "recipeCount": "2 Recipes",
+        "description": "Dairy-free, protein-enhanced pasta dishes using lentils, tofu, and veggies."
+      },
+      {
+        "chapterNum": "7",
+        "title": "Patties & Parathas",
+        "recipeCount": "3 Recipes",
+        "description": "High-protein Indian-inspired mains with flaxseeds, tofu, millet, and more."
+      },
+      {
+        "chapterNum": "8",
+        "title": "Snacks & Smoothies",
+        "recipeCount": "2 Recipes",
+        "description": "Muscle-repairing bites and post-workout smoothies to power recovery."
+      }
     ],
+    "section_2": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Healthy Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fresh, filling bowls with high-protein ingredients like rajma, tofu, quinoa, and soya chunks — ideal for lunch or light dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Curries & Khichdi",
+        "recipeCount": "3 Recipes",
+        "description": "Balanced Indian-style vegetarian mains made with clean ingredients like tofu, spinach, and quinoa for comfort and nutrition."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Quick Snacks & Light Meals",
+        "recipeCount": "10 Recipes",
+        "description": "Sandwiches, wraps, rolls, and stir-fries crafted for taste and macros — perfect for small meals, post-workout bites, or mid-day fuel."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Pasta & Fusion Dishes",
+        "recipeCount": "2 Recipes",
+        "description": "Continental-style meals using paneer and veggies, with an Indian twist — designed for variety and clean indulgence."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies & Drinks",
+        "recipeCount": "3 Recipes",
+        "description": "Macro-friendly smoothies for breakfast or post-training recovery, loaded with protein, healthy fats, and clean carbs."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Soups",
+        "recipeCount": "2 Recipes",
+        "description": "Low-calorie, digestion-friendly soups rich in protein and fiber — great for light dinners or reset days."
+      }
+    ],
+    "features_desc": "Welcome to The Lean Plant Kitchen — your complete toolkit for clean, meat-free meals that burn fat and build energy. Whether you're vegan, vegetarian, or somewhere in between, these 50 recipes keep you full, fit, and fueled for results.",
+    "features": [
+      "25 vegan + 25 vegetarian high-protein meals",
+      "Complete and complementary protein combinations",
+      "Indian + global flavor profiles with macro balance",
+      "Designed for weight loss, satiety, and muscle support"
+    ],
+    "why_this_book_desc": "This combo edition combines the best of both worlds — 100% meat-free, but filled with bold, effective meals built for fitness and flavor. Whether you're aiming to cut fat, stay lean, or maintain energy without meat, this book delivers structure and satisfaction.",
     "why_this_book": [
-      "Covers full plant-based spectrum",
-      "Great for transitioning to fully vegan or blending diets",
-      "Save more with the combo than buying individually"
+      "Perfect for fat-loss focused vegans and vegetarians",
+      "Built on whole foods — no junk, no shortcuts",
+      "Optimized for digestion, energy, and satiety",
+      "Great for mixed households with both diets",
+      "Every recipe is under ~350 kcal with smart macros"
     ],
     "cta": "Buy Now",
-    "bonus": "Free bonus: Smoothie prep guide included!"
-  },
-  {
-    "id": "vegan-nonvegetarian",
-    "title": "DDF Combo: Vegan + Non-Vegetarian",
-    "tagline": "Maximize Protein Flexibility with Plant & Animal Sources.",
-    "image": "/images/vegan-nonveg-combo.jpg",
-    "description": "Get 50+ recipes combining the muscle-building power of non-veg with the clean energy of vegan eating.",
-    "includes": ["vegan", "nonvegetarian"],
-    "features": [
-      "Perfect balance for high-performance diets",
-      "Explore ethical eating while still hitting protein targets",
-      "Ideal for flexible eaters or shared households"
-    ],
-    "why_this_book": [
-      "Gain full control over your protein sources",
-      "Great for anyone exploring vegan on training rest days",
-      "Train harder, recover smarter with hybrid options"
-    ],
-    "cta": "Buy Now",
-    "bonus": "Bonus PDF: Weekly macro mix planner!"
+    "bonus": "Includes plant-based protein guide and macro swap chart!"
   },
   {
     "id": "vegetarian-nonvegetarian",
-    "title": "DDF Combo: Vegetarian + Non-Vegetarian",
-    "tagline": "From Cottage Cheese to Chicken – Build Your Best Meals.",
+    "title": "50 Vegetarian + Non-Vegetarian Recipes : The Dual Fuel Kitchen",
+    "tagline": "Fat-loss meals with or without meat — your fuel, your choice.",
     "image": "/images/veg-nonveg-combo.jpg",
-    "description": "Two powerful books combining vegetarian comfort food with non-veg performance meals — 50 recipes to fuel your goals.",
-    "includes": ["vegetarian", "nonvegetarian"],
-    "features": [
-      "Ideal for mixed households and flexible eaters",
-      "Cover traditional Indian cooking needs with a fitness spin",
-      "Smart pairing of flavor + function"
+    "description": "A balanced recipe collection of 25 vegetarian and 25 non-vegetarian dishes built to help you lose fat, stay full, and eat clean — featuring Indian-inspired bowls, wraps, curries, smoothies, and more.",
+    "section_1": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Healthy Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fresh, filling bowls with high-protein ingredients like rajma, tofu, quinoa, and soya chunks — ideal for lunch or light dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Curries & Khichdi",
+        "recipeCount": "3 Recipes",
+        "description": "Balanced Indian-style vegetarian mains made with clean ingredients like tofu, spinach, and quinoa for comfort and nutrition."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Quick Snacks & Light Meals",
+        "recipeCount": "10 Recipes",
+        "description": "Sandwiches, wraps, rolls, and stir-fries crafted for taste and macros — perfect for small meals, post-workout bites, or mid-day fuel."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Pasta & Fusion Dishes",
+        "recipeCount": "2 Recipes",
+        "description": "Continental-style meals using paneer and veggies, with an Indian twist — designed for variety and clean indulgence."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies & Drinks",
+        "recipeCount": "3 Recipes",
+        "description": "Macro-friendly smoothies for breakfast or post-training recovery, loaded with protein, healthy fats, and clean carbs."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Soups",
+        "recipeCount": "2 Recipes",
+        "description": "Low-calorie, digestion-friendly soups rich in protein and fiber — great for light dinners or reset days."
+      }
     ],
+    "section_2": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Power Bowls",
+        "recipeCount": "8 Recipes",
+        "description": "Protein-packed meals served in a bowl with greens, grains, or legumes — perfect for lunch or dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Sandwiches & Rolls",
+        "recipeCount": "8 Recipes",
+        "description": "High-protein non-veg sandwiches and wraps ideal for clean eating on the go or meal prep."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Sauce-Based Chicken Dishes",
+        "recipeCount": "6 Recipes",
+        "description": "Flavorful, fat-loss-friendly chicken recipes paired with yogurt, herbs, or clean sauces."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Soups",
+        "recipeCount": "3 Recipes",
+        "description": "Light, healing, and protein-rich soups — perfect for digestion, reset days, or low-cal dinners."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies",
+        "recipeCount": "1 Recipe",
+        "description": "A refreshing, protein-supported green smoothie for clean energy and hydration."
+      }
+    ],
+    "features_desc": "Welcome to The Dual Fuel Kitchen — a practical, results-focused cookbook that helps you shred fat with clean, high-protein meals whether you eat meat or not. Designed for flexible eaters, active individuals, and families with mixed food preferences.",
+    "features": [
+      "25 vegetarian + 25 non-veg high-protein recipes",
+      "Macro-balanced meals for fat loss and muscle support",
+      "Indian classics and global fitness meals included",
+      "Made for energy, recovery, and lean body goals"
+    ],
+    "why_this_book_desc": "This combo edition blends clean vegetarian recipes with lean non-veg options — giving you the freedom to fuel your goals without restricting your lifestyle. Whether you eat eggs and chicken or prefer paneer and pulses, this book fits your fat-loss journey.",
     "why_this_book": [
-      "From light snacks to post-gym meals — it's all here",
-      "Great for managing family diet preferences",
-      "Big savings + full day planning flexibility"
+      "Balanced for fat loss, satiety, and real-world flexibility",
+      "Each recipe crafted to support strength and lean eating",
+      "Great for couples or families with mixed preferences",
+      "Clear macro structure and minimal prep steps",
+      "Your choice: meat-free or meat-fueled — results either way"
     ],
     "cta": "Buy Now",
-    "bonus": "Free bonus: Grocery checklist template!"
+    "bonus": "Includes dual-diet macro tracker and flexible meal plan guide!"
   },
   {
     "id": "vegan-vegetarian-nonvegetarian",
-    "title": "DDF Mega Combo: Vegan + Vegetarian + Non-Veg",
-    "tagline": "The Complete Fitness Cookbook Set for Every Lifestyle.",
-    "image": "/images/all-combo.jpg",
-    "description": "Unlock all 3 cookbooks and 75+ recipes that match every mood, goal, and lifestyle — the ultimate recipe arsenal for clean eating.",
-    "includes": ["vegan", "vegetarian", "nonvegetarian"],
-    "features": [
-      "Best value – save big on the full set",
-      "Ideal for nutrition coaches, families, or power couples",
-      "Gives unmatched flexibility for any training phase"
+    "title": "75 Fat-Loss Recipes : The Triple Burn Kitchen",
+    "tagline": "Vegan. Veg. Non-Veg. One goal — sustainable fat loss.",
+    "image": "/images/triple-burn-kitchen.jpg",
+    "description": "75 high-protein, fat-loss-focused meals across vegan, vegetarian, and non-vegetarian options — crafted to fuel energy, burn fat, and satisfy every lifestyle.",
+    "section_1": [
+      {
+        "chapterNum": "1",
+        "title": "Soups",
+        "recipeCount": "3 Recipes",
+        "description": "Warm, protein-rich broths and soups ideal for dinner or recovery meals."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Salad Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fiber-filled, crunchy bowls with lentils, beans, quinoa, seeds, and greens."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Wraps & Rolls",
+        "recipeCount": "3 Recipes",
+        "description": "Tempeh, tofu, and jackfruit wraps made for flavor and post-workout balance."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Healthy Bowls",
+        "recipeCount": "5 Recipes",
+        "description": "Complete one-bowl meals for satiety, strength, and fat-burning fuel."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Toasts, Sandwiches & Muffins",
+        "recipeCount": "3 Recipes",
+        "description": "Savory morning meals and grab-and-go sandwiches made clean."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Pasta",
+        "recipeCount": "2 Recipes",
+        "description": "Dairy-free, protein-enhanced pasta dishes using lentils, tofu, and veggies."
+      },
+      {
+        "chapterNum": "7",
+        "title": "Patties & Parathas",
+        "recipeCount": "3 Recipes",
+        "description": "High-protein Indian-inspired mains with flaxseeds, tofu, millet, and more."
+      },
+      {
+        "chapterNum": "8",
+        "title": "Snacks & Smoothies",
+        "recipeCount": "2 Recipes",
+        "description": "Muscle-repairing bites and post-workout smoothies to power recovery."
+      }
     ],
+    "section_2": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Healthy Bowls",
+        "recipeCount": "4 Recipes",
+        "description": "Fresh, filling bowls with high-protein ingredients like rajma, tofu, quinoa, and soya chunks — ideal for lunch or light dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Curries & Khichdi",
+        "recipeCount": "3 Recipes",
+        "description": "Balanced Indian-style vegetarian mains made with clean ingredients like tofu, spinach, and quinoa for comfort and nutrition."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Quick Snacks & Light Meals",
+        "recipeCount": "10 Recipes",
+        "description": "Sandwiches, wraps, rolls, and stir-fries crafted for taste and macros — perfect for small meals, post-workout bites, or mid-day fuel."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Pasta & Fusion Dishes",
+        "recipeCount": "2 Recipes",
+        "description": "Continental-style meals using paneer and veggies, with an Indian twist — designed for variety and clean indulgence."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies & Drinks",
+        "recipeCount": "3 Recipes",
+        "description": "Macro-friendly smoothies for breakfast or post-training recovery, loaded with protein, healthy fats, and clean carbs."
+      },
+      {
+        "chapterNum": "6",
+        "title": "Soups",
+        "recipeCount": "2 Recipes",
+        "description": "Low-calorie, digestion-friendly soups rich in protein and fiber — great for light dinners or reset days."
+      }
+    ],
+    "section_3": [
+      {
+        "chapterNum": "1",
+        "title": "Salad Bowls & Power Bowls",
+        "recipeCount": "8 Recipes",
+        "description": "Protein-packed meals served in a bowl with greens, grains, or legumes — perfect for lunch or dinner."
+      },
+      {
+        "chapterNum": "2",
+        "title": "Sandwiches & Rolls",
+        "recipeCount": "8 Recipes",
+        "description": "High-protein non-veg sandwiches and wraps ideal for clean eating on the go or meal prep."
+      },
+      {
+        "chapterNum": "3",
+        "title": "Sauce-Based Chicken Dishes",
+        "recipeCount": "6 Recipes",
+        "description": "Flavorful, fat-loss-friendly chicken recipes paired with yogurt, herbs, or clean sauces."
+      },
+      {
+        "chapterNum": "4",
+        "title": "Soups",
+        "recipeCount": "3 Recipes",
+        "description": "Light, healing, and protein-rich soups — perfect for digestion, reset days, or low-cal dinners."
+      },
+      {
+        "chapterNum": "5",
+        "title": "Smoothies",
+        "recipeCount": "1 Recipe",
+        "description": "A refreshing, protein-supported green smoothie for clean energy and hydration."
+      }
+    ],
+    "features_desc": "Welcome to The Triple Burn Kitchen — a complete recipe book for every fat-loss lifestyle. Whether you’re vegan, vegetarian, non-vegetarian, or mix all three, this book helps you cut fat, build strength, and eat food you love.",
+    "features": [
+      "75 total meals — 25 each from vegan, vegetarian, and non-veg diets",
+      "Macro-calibrated meals under ~350 kcal each",
+      "Ideal for individuals, families, or multi-diet homes",
+      "Every recipe designed for fat loss, fullness, and function"
+    ],
+    "why_this_book_desc": "Tired of restrictive plans that don’t fit your real life? The Triple Burn Kitchen gives you structured, high-protein recipes across all diets. You don’t need to choose sides — just choose progress. This book adapts to your needs and still delivers results.",
     "why_this_book": [
-      "One purchase = every clean eating option imaginable",
-      "Plan months of meals with zero boredom",
-      "Total protein, variety, flavor, and value in one bundle"
+      "Works for all food preferences and mixed households",
+      "Clear macro balance for sustainable fat loss",
+      "Flexible plans: cut fat without confusion or compromise",
+      "Includes global and Indian-style dishes for variety",
+      "From tofu to paneer to grilled chicken — one guide, three paths"
     ],
     "cta": "Buy Now",
-    "bonus": "Exclusive bonus: Monthly meal planner + recipe tracker!"
+    "bonus": "Includes fat-loss meal planner, macro swap sheet, and protein tracker!"
   }
 ]
