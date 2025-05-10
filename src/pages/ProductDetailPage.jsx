@@ -142,95 +142,96 @@ const ProductDetailPage = () => {
 
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         {/* Immersive Hero Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5  sm:gap-12 px-4 sm:px-6 items-center justify-center ">
           {/* Hover-Interactive Gallery */}
-          <div className="group relative h-[700px] rounded-[48px] overflow-hidden shadow-2xl border-2 border-white/10 transform hover:scale-[0.99] transition-all duration-500 cursor-grab active:cursor-grabbing">
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
+          <div className=" col-span-3 sm:w-[85%] sm:mx-auto group relative h-[500px] sm:h-[500px] lg:h-[740px] rounded-[32px] sm:rounded-[48px] overflow-hidden shadow-2xl border border-white/10 transform hover:scale-[0.99] transition-all duration-500 cursor-grab active:cursor-grabbing">
+            <div className="absolute inset-0 bg-black/80" />
             <img
               src={galleryImages[currentImage]}
               alt={`Preview ${currentImage + 1}`}
-              className="w-full h-full object-fill transform group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-fill transform group-hover:scale-105 transition-transform duration-500 p-3 rounded-[32px] sm:rounded-[48px]"
             />
 
-            {/* Floating Metadata */}
-
-            {/* Dynamic Progress Dots */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+            {/* Progress Dots */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
               {galleryImages.map((_, index) => (
                 <div
                   key={index}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`h-2 w-2 rounded-full transition-all duration-300 ${
                     currentImage === index
-                      ? "bg-rose-600 w-8"
+                      ? "bg-rose-600 w-6"
                       : "bg-white/30 hover:bg-white/50"
                   }`}
                 />
               ))}
             </div>
 
-            {/* Hover-Reveal Navigation */}
-            <div className="absolute inset-0 flex items-center justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity">
+            {/* Navigation Buttons */}
+            <div className="absolute inset-0 flex items-center justify-between px-4 sm:px-6 opacity-0 group-hover:opacity-100 transition-opacity">
               <button
                 onClick={prevImage}
-                className="bg-black/40 backdrop-blur-lg p-4 rounded-full hover:bg-black/60 transition-colors"
+                className="bg-black/40 backdrop-blur-lg p-2 sm:p-3 rounded-full hover:bg-black/60"
               >
-                <FiChevronLeft className="w-8 h-8 text-rose-100" />
+                <FiChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-rose-100" />
               </button>
               <button
                 onClick={nextImage}
-                className="bg-black/40 backdrop-blur-lg p-4 rounded-full hover:bg-black/60 transition-colors"
+                className="bg-black/40 backdrop-blur-lg p-2 sm:p-3 rounded-full hover:bg-black/60"
               >
-                <FiChevronRight className="w-8 h-8 text-rose-100" />
+                <FiChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-rose-100" />
               </button>
             </div>
           </div>
 
-          {/* Floating Purchase Card */}
-          <div className="sticky top-24 bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-[48px] p-10 shadow-2xl border-2 border-white/5 backdrop-blur-xl">
-            <div className="space-y-10">
-              {/* Animated Price Display */}
-              <span className="text-5xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">
+          {/* Purchase Card */}
+          <div className=" col-span-2  mt-8 lg:mt-0">
+            <div className="space-y-6  bg-gradient-to-br from-zinc-900 to-zinc-800 rounded-[32px] sm:rounded-[48px] p-6 sm:p-10 shadow-2xl border border-white/10 backdrop-blur-xl">
+              {/* Title and Tagline */}
+              <span className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent block">
                 {product.title}
               </span>
-              <p className="text-zinc-400 text-lg">{product.tagline}</p>
+              <p className="text-zinc-400 text-base sm:text-lg">
+                {product.tagline}
+              </p>
 
+              {/* Price Block */}
               <div className="bg-gradient-to-r from-rose-700 to-purple-700 p-1 rounded-2xl inline-block">
-                <div className="bg-zinc-900 rounded-xl p-6">
-                  <div className="flex items-end gap-4">
-                    <span className="text-5xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">
+                <div className="bg-zinc-900 rounded-xl p-4 sm:p-6">
+                  <div className="flex items-end gap-3">
+                    <span className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent">
                       ₹299
                     </span>
                     <span className="text-zinc-400 line-through pb-1">
                       ₹600
                     </span>
-                    <span className="ml-auto bg-rose-600/30 text-rose-300 px-4 py-1 rounded-full text-sm">
+                    <span className="ml-auto bg-rose-600/30 text-rose-300 px-3 py-1 rounded-full text-xs sm:text-sm">
                       50% OFF
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Hover-Enhanced Actions */}
-              <div className="space-y-6">
-                <button className="w-full bg-gradient-to-r from-rose-600 to-purple-600 hover:from-rose-700 hover:to-purple-700 text-white py-6 rounded-2xl font-bold text-xl flex items-center justify-center gap-4 transition-all hover:shadow-rose-500/30 shadow-lg">
-                  <FiShoppingCart className="w-8 h-8 animate-bounce-horizontal" />
+              {/* Action Button */}
+              <div>
+                <button className="w-full bg-gradient-to-r from-rose-600 to-purple-600 hover:from-rose-700 hover:to-purple-700 text-white py-4 sm:py-6 rounded-2xl font-bold text-lg sm:text-xl flex items-center justify-center gap-3 sm:gap-4 transition-all hover:shadow-rose-500/30 shadow-lg">
+                  <FiShoppingCart className="w-6 h-6 sm:w-8 sm:h-8 animate-bounce-horizontal" />
                   Instant Digital Access
                 </button>
               </div>
 
-              {/* Dynamic Bonus Reveal */}
+              {/* Bonus Block */}
               {product.bonus && (
-                <div className="mt-8 p-6 bg-zinc-800/50 rounded-xl border-2 border-zinc-700/50 hover:border-rose-500/30 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-gradient-to-r from-rose-600 to-purple-600 p-3 rounded-xl">
-                      <FiGift className="w-8 h-8 text-white" />
+                <div className="mt-6 sm:mt-8 p-5 sm:p-6 bg-zinc-800/50 rounded-xl border border-zinc-700/50 hover:border-rose-500/30 transition-colors">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="bg-gradient-to-r from-rose-600 to-purple-600 p-2 sm:p-3 rounded-xl">
+                      <FiGift className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-zinc-200 mb-2">
-                        Premium Bonuses Included
+                      <h3 className="text-lg sm:text-xl font-bold text-zinc-200 mb-1 sm:mb-2">
+                        Bonuses Included
                       </h3>
-                      <p className="text-zinc-400 leading-relaxed">
-                        {product.bonus}
+                      <p className="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                        Weekly Meal Planner Template (Printable & Digital){" "}
                       </p>
                     </div>
                   </div>
@@ -310,7 +311,7 @@ const ProductDetailPage = () => {
           {section1.length > 0 && (
             <div className="space-y-6">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                Section 1
+                Chapters{" "}
               </h3>
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {section1.map((item, i) => (
@@ -347,7 +348,7 @@ const ProductDetailPage = () => {
           {section2.length > 0 && (
             <div className="space-y-6">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                Section 2
+                Chapters in second book{" "}
               </h3>
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {section2.map((item, i) => (
@@ -383,7 +384,7 @@ const ProductDetailPage = () => {
           {section3.length > 0 && (
             <div className="space-y-6">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mb-4">
-                Section 3
+                Chapters in third book
               </h3>
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {section3.map((item, i) => (
@@ -417,13 +418,13 @@ const ProductDetailPage = () => {
           )}
         </div>
         {/* Floating Metadata Footer */}
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900/80 backdrop-blur-xl px-8 py-4 rounded-full border-2 border-white/5 shadow-2xl flex gap-8 items-center">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-zinc-900/80 backdrop-blur-xl px-3 py-2 sm:px-6 sm:py-3 rounded-full border border-white/10 shadow-2xl flex  sm:flex-row gap-2 sm:gap-6 items-center w-[95%] max-w-xl mx-auto">
           <div className="flex items-center gap-4">
             <FiClock className="w-6 h-6 text-rose-400" />
-            <span className="text-zinc-300">Instant Digital Delivery</span>
+            <span className="text-zinc-300  ">Instant Digital Delivery</span>
           </div>
-          <div className="h-6 w-px bg-zinc-700" />
-          <div className="flex items-center gap-4">
+          <div className=" hidden sm:flex  h-6 w-px bg-zinc-700" />
+          <div className=" hidden sm:flex items-center gap-4">
             <FiLock className="w-6 h-6 text-purple-400" />
             <span className="text-zinc-300">Secure Payment Gateway</span>
           </div>
